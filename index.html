@@ -280,7 +280,22 @@
   }
   .stat .v small { font-size: .5em; letter-spacing: 0; color: var(--ink-3); margin-right: 6px; }
 
-  /* ---------- 8 · aprendizados ---------- */
+  /* ---------- 8 · caixa ---------- */
+  .cash h2 { margin-top: 28px; position: relative; z-index: 1; }
+  .sankey {
+    position: absolute; left: 84px; top: 56px;
+    width: 1112px; height: 584px; overflow: visible;
+    --op: #199e70; --com: #9085e9; --fin: #d55181; --cash: #c98500;
+  }
+  .sankey text { font: 400 14px/1 var(--sans); fill: var(--cream); }
+  .sankey .val { fill: var(--cream-3); font-variant-numeric: lining-nums tabular-nums; }
+  .sankey .mid { font-weight: 600; letter-spacing: .16em; text-transform: uppercase; font-size: 12px; fill: var(--cream-3); }
+  .sankey .flow { fill-opacity: .4; transition: fill-opacity .25s var(--ease); }
+  .sankey .flow.in { fill: var(--cream); fill-opacity: .12; }
+  .sankey .flow:hover { fill-opacity: .75; }
+  .sankey .node { fill: var(--cream-3); }
+
+
   .lesson .n {
     display: flex; align-items: baseline; gap: 10px;
     font-family: var(--serif); font-weight: 340;
@@ -467,7 +482,7 @@
         <div class="col up" style="--d:2">
           <span class="idx">A</span>
           <h3>Preço</h3>
-          <p>Competitivo onde escolhemos disputar, com margem para sustentar o resultado.</p>
+          <p>Mais competitivo, com foco no exterior, onde não há imposto.</p>
         </div>
         <div class="col up" style="--d:3">
           <span class="idx">B</span>
@@ -483,7 +498,7 @@
       <div class="foot"><span>Período 1</span><span class="n"></span></div>
     </div>
     <aside class="notes">
-      1:05 – 1:50 · Mercado: histórico por região + sazonalidade; preço, prazo e propaganda avaliados em conjunto. Prazo equilibrando atratividade e recebimento. Propaganda de menor custo com efeito nos períodos seguintes. Distribuição: produto enviado não pode ser remanejado, então priorizamos disponibilidade imediata, mesmo com frete maior. Não citar preços nem percentuais por região.
+      1:05 – 1:50 · Mercado: histórico por região + sazonalidade; preço, prazo e propaganda avaliados em conjunto. Prazo equilibrando atratividade e recebimento. Propaganda de menor custo com efeito nos períodos seguintes. Distribuição: produto enviado não pode ser remanejado, então priorizamos disponibilidade imediata, mesmo com frete maior. Foco no exterior, onde a venda não paga imposto. Sobre preço, dizer só que optamos por ser mais competitivos: não citar preços nem percentuais por região.
     </aside>
   </section>
 
@@ -563,14 +578,27 @@
       <div class="foot"><span>Período 1</span><span class="n"></span></div>
     </div>
     <aside class="notes">
-      3:20 – 4:00 · Primeiro lugar: RPLA de 16,04% contra 13,20% da segunda colocada, 2,84 pontos de vantagem. Faturamento de R$ 2,39 milhões, lucro líquido de R$ 210,5 mil, caixa final de R$ 495 mil. As vendas superaram a previsão.
+      3:20 – 3:50 · Primeiro lugar: RPLA de 16,04% contra 13,20% da segunda colocada, 2,84 pontos de vantagem. Faturamento de R$ 2,39 milhões, lucro líquido de R$ 210,5 mil, caixa final de R$ 495 mil. As vendas superaram a previsão.
+    </aside>
+  </section>
+
+  <!-- 8 · Para onde foi o dinheiro -->
+  <section data-background-color="#2A1A12" class="dark cash">
+    <div class="frame">
+      <svg class="sankey up" style="--d:1" viewBox="0 0 1112 584" role="img" aria-label="Fluxo de caixa realizado do P1: R$ 2.697.265,52 entre caixa inicial, recebimentos e crédito; 58% foi para a operação, 11% para o comercial, 13% para dívida e impostos e 18% ficou como caixa final"></svg>
+      <div class="kicker"><b>07</b><i class="rule"></i>Para onde foi o dinheiro</div>
+      <h2 class="up">Para onde foi <em>cada real.</em></h2>
+      <div class="foot"><span>Período 1 · Fluxo de caixa realizado</span><span class="n"></span></div>
+    </div>
+    <aside class="notes">
+      3:50 – 4:15 · Passaram R$ 2,70 milhões pelo caixa: 84% vieram de vendas (do P1 e de clientes anteriores) e R$ 420 mil de crédito. 58% foi para a operação, com insumos e salários como os maiores gastos; 11% para o comercial; 13% para a dívida inicial e os impostos do P0. Sobraram R$ 495 mil.
     </aside>
   </section>
 
   <!-- 8 · Aprendizados -->
   <section>
     <div class="frame">
-      <div class="kicker"><b>07</b><i class="rule"></i>O que o P1 ensinou</div>
+      <div class="kicker"><b>08</b><i class="rule"></i>O que o P1 ensinou</div>
       <h2 class="up" style="margin-top:40px">Vencemos a rodada.<br><em>Ela deixou três recados.</em></h2>
       <div class="cols three">
         <div class="col lesson up" style="--d:2">
@@ -592,14 +620,14 @@
       <div class="foot"><span>Período 1</span><span class="n"></span></div>
     </div>
     <aside class="notes">
-      4:00 – 4:40 · O resultado validou parte da estratégia, mas mostrou ajustes: perdemos 76 caixas de brownie enquanto faltou produto no mercado local; o chocolate terminou com só 20 caixas; o caixa ficou acima do necessário.
+      4:15 – 4:45 · O resultado validou parte da estratégia, mas mostrou ajustes: perdemos 76 caixas de brownie enquanto faltou produto no mercado local; o chocolate terminou com só 20 caixas; o caixa ficou acima do necessário.
     </aside>
   </section>
 
   <!-- 9 · Próximas rodadas -->
   <section data-background-color="#2A1A12" class="dark">
     <div class="frame">
-      <div class="kicker"><b>08</b><i class="rule"></i>Daqui pra frente</div>
+      <div class="kicker"><b>09</b><i class="rule"></i>Daqui pra frente</div>
       <h2 class="xl up" style="margin-top:44px">Primeiro pedaço garantido.<br><em>Faltam sete.</em></h2>
       <div class="rounds" role="img" aria-label="Rodada 1 de 8 concluída em primeiro lugar; sete rodadas restantes">
         <div class="piece done" style="--i:0"><span><b>1<span class="ord">o</span></b>P1</span></div>
@@ -617,7 +645,7 @@
       </div>
     </div>
     <aside class="notes">
-      4:40 – 5:00 · Defender a liderança nas sete rodadas restantes com melhor distribuição, estoque de segurança e uso do caixa. Agradecer.
+      4:45 – 5:00 · Defender a liderança nas sete rodadas restantes com melhor distribuição, estoque de segurança e uso do caixa. Agradecer.
     </aside>
   </section>
 
@@ -634,6 +662,129 @@
     const n = s.querySelector('.foot .n');
     if (n) n.textContent = pad(i + 1) + ' / ' + pad(slides.length);
   });
+
+  // Fluxo de caixa realizado do P1 (relatório oficial): origens → caixa → saídas
+  (function sankey() {
+    const svg = document.querySelector('.sankey');
+    if (!svg) return;
+    const NS = 'http://www.w3.org/2000/svg';
+    const W = 1112, H = 584;
+    const SRC_X = 184, MID_X = 470, OUT_X = 784, BAR = 6, LABEL_X = 800;
+    const ROW = 19, GAP = 3, GROUP_GAP = 12, SRC_ROW = 38, SRC_GAP = 8, CY = 322;
+
+    const sources = [
+      ['Caixa inicial', 21478.52],
+      ['Vendas P1 recebidas', 1469063.00],
+      ['Clientes anteriores', 786724.00],
+      ['Empréstimo de giro', 300000.00],
+      ['Financiamento de máquinas', 120000.00],
+    ];
+    const groups = [
+      { key: 'op', name: 'Operação', items: [
+        ['Entrada dos insumos · Joe', 673258.26],
+        ['Salários, comissões e encargos', 599139.75],
+        ['Alimentação dos 24 operários', 12000.00],
+        ['4 máquinas Oélede', 120000.00],
+        ['Energia das máquinas', 48334.95],
+        ['Aluguel da fábrica', 70000.00],
+        ['Armazenagem dos insumos', 657.16],
+        ['Manutenção das máquinas', 9000.00],
+        ['Despesas administrativas', 6000.00],
+        ['Assessoria contábil', 9000.00],
+        ['Aluguel administrativo', 10000.00],
+      ]},
+      { key: 'com', name: 'Comercial', items: [
+        ['Transporte dos produtos', 217797.00],
+        ['Armazenagem de chocolate', 5675.70],
+        ['Aluguel dos CDs', 60000.00],
+        ['Publicidade · 10 pacotes Papel', 10800.00],
+      ]},
+      { key: 'fin', name: 'Dívida e impostos', items: [
+        ['Impostos IPI / ICMS de P0', 71580.23],
+        ['Amortização da dívida inicial', 240000.00],
+        ['Juros da dívida inicial', 39000.00],
+      ]},
+      { key: 'cash', name: 'Caixa final', items: [
+        ['Caixa final disponível', 495022.48],
+      ]},
+    ];
+
+    const total = sources.reduce((a, [, v]) => a + v, 0);
+    const brl = v => v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const pct = v => Math.round(v / total * 100) + '%';
+    const el = (tag, attrs, text) => {
+      const n = document.createElementNS(NS, tag);
+      for (const k in attrs) n.setAttribute(k, attrs[k]);
+      if (text != null) n.textContent = text;
+      svg.appendChild(n);
+      return n;
+    };
+    const tip = (n, s) => { const t = document.createElementNS(NS, 'title'); t.textContent = s; n.appendChild(t); };
+
+    // maior escala em que a coluna da direita (uma linha por saída) cabe na altura
+    const outCount = groups.reduce((a, g) => a + g.items.length, 0);
+    const fixed = (outCount - groups.length) * GAP + (groups.length - 1) * GROUP_GAP;
+    const colH = s => fixed + groups.reduce((a, g) => a + g.items.reduce((b, [, v]) => b + Math.max(v * s, ROW), 0), 0);
+    let lo = 0, hi = H / total;
+    for (let i = 0; i < 40; i++) { const m = (lo + hi) / 2; colH(m) <= H ? lo = m : hi = m; }
+    const s = lo;
+
+    // a banda nunca some: valores minúsculos ficam com 1px
+    const band = (x0, a0, a1, x1, b0, b1) => {
+      const t = Math.max(a1 - a0, 1) / 2, ca = (a0 + a1) / 2, cb = (b0 + b1) / 2, xm = (x0 + x1) / 2;
+      return `M${x0},${ca - t}C${xm},${ca - t} ${xm},${cb - t} ${x1},${cb - t}` +
+             `L${x1},${cb + t}C${xm},${cb + t} ${xm},${ca + t} ${x0},${ca + t}Z`;
+    };
+
+    const midTop = CY - total * s / 2;
+
+    // origens → caixa
+    const srcH = sources.reduce((a, [, v]) => a + Math.max(v * s, SRC_ROW), 0) + (sources.length - 1) * SRC_GAP;
+    let y = CY - srcH / 2, my = midTop;
+    for (const [name, v] of sources) {
+      const h = v * s, slot = Math.max(h, SRC_ROW), top = y + (slot - h) / 2, c = y + slot / 2;
+      tip(el('path', { class: 'flow in', d: band(SRC_X + BAR, top, top + h, MID_X, my, my + h) }), `${name}: R$ ${brl(v)}`);
+      el('rect', { class: 'node', x: SRC_X, y: top, width: BAR, height: Math.max(h, 2), rx: 1 });
+      el('text', { x: SRC_X - 12, y: c - 4, 'text-anchor': 'end' }, name);
+      el('text', { class: 'val', x: SRC_X - 12, y: c + 13, 'text-anchor': 'end' }, brl(v));
+      y += slot + SRC_GAP; my += h;
+    }
+
+    // caixa → saídas
+    y = 0; my = midTop;
+    groups.forEach((g, gi) => {
+      if (gi) y += GROUP_GAP - GAP;
+      for (const [name, v] of g.items) {
+        const h = v * s, slot = Math.max(h, ROW), top = y + (slot - h) / 2, c = y + slot / 2;
+        const label = `${name}: R$ ${brl(v)} (${pct(v)} do total)`;
+        tip(el('path', { class: 'flow', style: `fill:var(--${g.key})`, d: band(MID_X + BAR, my, my + h, OUT_X, top, top + h) }), label);
+        el('rect', { x: OUT_X, y: c - Math.max(h, 2) / 2, width: BAR, height: Math.max(h, 2), rx: 1, style: `fill:var(--${g.key})` });
+        el('text', { x: LABEL_X, y: c + 5 }, name);
+        el('text', { class: 'val', x: W, y: c + 5, 'text-anchor': 'end' }, brl(v));
+        y += slot + GAP; my += h;
+      }
+    });
+
+    // caixa no meio
+    el('rect', { class: 'node', x: MID_X, y: midTop, width: BAR, height: total * s, rx: 1 });
+    el('text', { class: 'mid', x: MID_X + BAR / 2, y: midTop - 30, 'text-anchor': 'middle' }, 'Caixa');
+    el('text', { class: 'val', x: MID_X + BAR / 2, y: midTop - 11, 'text-anchor': 'middle' }, brl(total));
+
+    // legenda: saídas por natureza
+    const short = v => v >= 1e6
+      ? 'R$ ' + (v / 1e6).toLocaleString('pt-BR', { maximumFractionDigits: 2 }) + ' mi'
+      : 'R$ ' + Math.round(v / 1e3) + ' mil';
+    groups.forEach((g, i) => {
+      const sum = g.items.reduce((a, [, v]) => a + v, 0);
+      const x = (i % 2) * 265, ly = H - 34 + Math.floor(i / 2) * 26;
+      el('rect', { x, y: ly - 10, width: 10, height: 10, rx: 2, style: `fill:var(--${g.key})` });
+      const t = el('text', { x: x + 18, y: ly }, g.name);
+      const v = document.createElementNS(NS, 'tspan');
+      v.setAttribute('class', 'val'); v.setAttribute('dx', 8);
+      v.textContent = `${pct(sum)} · ${short(sum)}`;
+      t.appendChild(v);
+    });
+  })();
 
   Reveal.initialize({
     width: 1280,
